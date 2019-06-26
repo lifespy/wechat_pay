@@ -10,13 +10,12 @@ public class WXPayConfig {
     @Bean
     public WxPayConfig getConfig() {
         WxPayConfig payConfig = new WxPayConfig();
+        payConfig.setAppId("");
         payConfig.setMchId("");
         payConfig.setMchKey("");
         payConfig.setSubMchId("");
         payConfig.setNotifyUrl("");
         payConfig.setTradeType("NATIVE");
-        payConfig.setAppId("");
-        payConfig.setMchId("");
         return payConfig;
     }
 }
